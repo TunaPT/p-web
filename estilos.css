@@ -1,0 +1,41 @@
+* {font-family: 'Golos Text', sans-serif;} 
+
+h3 {
+    color: rgb(255, 162, 32);
+}
+
+.introducao {
+    color: rgb(160, 248, 248);
+}
+
+#quizz {
+    background-color: antiquewhite;
+}
+
+h1:hover {
+    color: rgb(144, 80, 2);
+}
+
+h1::first-letter{
+    color: rgb(255, 0, 0);
+}
+
+a[target=_aqua] {
+    color: aqua;
+}
+
+#cinza {
+    background-color: gray;
+}
+
+section > p {
+    color: #454545;
+}
+
+section ~ p {
+    color: #454545;
+}
+
+section + p {
+    color: #454545;
+}
