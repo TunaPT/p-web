@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>LONDON - IMAGES</title>
+    <meta charset="utf-8">
+    <meta name="author" content="António Antunes">
+    <meta name="description" content="LAB4">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/uk.png">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+    </style>
+</head>
+
+<body>
+    
+    <div>
+        <nav class="menu">
+            <ul class="menu-left">
+                <li><a href="index.html" class="menu-item">LONDON</a></li>
+            </ul>
+            <ul class="menu-center">
+                <li><a href="index.html" class="menu-item">Home</a></li>
+                <li><a href="history.html" class="menu-item">History</a></li>
+                <li><a href="images.html" class="menu-item">Images</a></li>
+                <li><a href="anim.html" class="menu-item">Anim</a></li>
+                <div class="dropdown">
+                    <button class="dropbtn">Grid</button>
+                    <div class="dropdown-content">
+                        <a href="grid1.html">Grid1</a>
+                        <a href="grid2.html">Grid2</a>
+                        <a href="grid3.html">Grid3</a>
+                        <a href="grid4.html">Grid4</a>
+                        <a href="grid5.html">Grid5</a>
+                        <a href="grid6.html">Grid6</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">More</button>
+                    <div class="dropdown-content">
+                        <a href="local.html">Localização</a>
+                        <a href="multimedia.html">Multimedia</a>
+                        <a href="info.html">Informação</a>
+                        <a href="quizz.html">Quizz</a>
+                        <a href="html5-css.html">HTML5 e CSS</a>
+                    </div>
+                </div>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h2>See London in different sizes!</h2>
+        <p>Resize your browser width to try out.</p>
+        <picture>
+            <source srcset="images/big_ben.jpg" media="(max-width: 600px)">
+            <source srcset="images/tower_bridge.jpg" media="(max-width: 1500px)">
+            <source srcset="images/london_eye.jpg">
+            <img src="images/big_ben.jpeg" alt="London" style="width:auto;">
+        </picture>
+    </div>
+    
+</body>
+
+</html>
