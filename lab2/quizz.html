@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Londres</title>
+    <meta charset="utf-8">
+    <meta name="author" content="António Antunes">
+    <meta name="description" content="Website sobre Londres">
+    <meta name="keywords" content="londres, turismo">
+    <link rel="stylesheet" type="text/css" href="estilos.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Golos+Text&display=swap');
+    </style>
+</head>
+
+<body id="quizz">
+    <header>
+        <h1>Londres</h1>
+        <figure>
+            <img src="images/londres.jpg" alt="Londres">
+            <details>
+                <figcaption>Vista Big Ben - Final de Tarde</figcaption>
+            </details>
+        </figure>
+    </header>
+    <br>
+    <nav>
+        <p>
+            <a href="index.html">😎Introdução</a>
+            <a href="local.html">🗺Localização</a>
+            <a href="multimedia.html">📸Multimedia</a>
+            <a href="info.html">🔎Informação</a>
+            <a href="quizz.html">📋Quizz</a>
+            <a href="html5-css.html">🔗HTML5 e CSS</a></b>
+        </p>
+    </nav>
+    <main>
+        <section>
+            <h3>Quizz</h3>
+            <p>Conhece bem Londres? Vamos ver! Abaixo terá um quizz com algumas questões sobre a cidade</p>
+            <form method="POST" action="mailto: asf.antunes@gmail.com" enctype="multipart/form-data">
+                <fieldset>Quizz sobre Londres</fieldset>
+                <fieldset>Info
+                    <fieldset>Nome</fieldset>
+                    <fieldset>Apelido</fieldset>
+                    <fieldset>Email</fieldset>
+                </fieldset>
+                <fieldset>Perguntas
+                    <fieldset id="cinza">
+                        <p>Qual o monumento principal de Londres? <input type="text" placeholder="Insira Texto"
+                                autocomplete="on" size="7" maxlength="7" pattern="[A-Za-z]{7}" name="question1"></p>
+                    </fieldset>
+                    <fieldset>
+                        <p>Já visitou Londres? <input type="checkbox" required></p>
+                    </fieldset>
+                    <fieldset id="cinza">
+                        <p>Costuma estar frio em Londres?
+                            <label>
+                                <input type="radio" name="wheater" value="yes">
+                            </label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <p>Que mês faz mais frio em Londres?
+                            <select name="mes">
+                                <option value="Janeiro">Janeiro</option>
+                                <option value="Fevereiro">Fevereiro</option>
+                                <option value="Março">Março</option>
+                                <option value="Abril">Abril</option>
+                                <option value="Maio">Maio</option>
+                                <option value="Junho">Junho</option>
+                                <option value="Julho">Julho</option>
+                                <option value="Agosto">Agosto</option>
+                                <option value="Setembro">Setembro</option>
+                                <option value="Outubro">Outubro</option>
+                                <option value="Novembro">Novembro</option>
+                                <option value="Dezembro">Dezembro</option>
+                            </select>
+                        </p>
+                    </fieldset>
+                    <fieldset id="cinza">
+                        <p>Monumentos/Atrações Principais
+                            <input list="interesses" name="interesse">
+                            <datalist id="interesses">
+                                <option value="Big Ben">
+                                <option value="London Eye">
+                                <option value="Buckingham Palace">
+                            </datalist>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <!-- 4 Julho 1776 -->
+                        <p>Dia da independência do Reino Unido? <input type="date"></p>
+                    </fieldset>
+                    <fieldset id="cinza">
+                        <p>Que cor são os tradicionais taxis? <input type="color"></p>
+                    </fieldset>
+                    <fieldset>
+                        <p>1 EUR = <input type="number" name="pound" autofocus> POUND</p>
+                    </fieldset>
+                    <fieldset id="cinza">
+                        <p>O quão gostou/gostaria de Londres? <input type="range" min="0" max="100"></p>
+                    </fieldset>
+                    <fieldset>
+                        <textarea>Insira um comentário sobre Londres</textarea>
+                    </fieldset>
+                    <fieldset>
+                        <input type="submit" value="Submeter">
+                    </fieldset>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>António Antunes, a22202276, Universidade Lusófona, 2023</footer>
+</body>
+
+</html>
