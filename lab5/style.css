@@ -55,11 +55,71 @@ nav a:hover {
     margin-left: 15px
 }
 
-@media only screen and (max-width: 600px) {
+/* -------------------- */
+
+.dropDownMenu {
+    display: none;
+}
+
+.dropDownButton {
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: black;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+}
+  
+.dropdown-content a {
+    float: none;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropDownMenu:hover .dropdown-content {
+    display: block;
+}
+
+/* -------------------- */
+
+@media only screen and (max-width: 800px) {
    nav a:hover {
         background-color: transparent;
    }
+
+   .dropDownMenu {
+        display: inline-block;
+   }
+
+   .item-center {
+        display: none;
+   }
 }
+
+@media only screen and (min-width: 800px) {
+    nav a:hover {
+        background-color: #b3b3b3;
+    }
+ 
+    .dropDownMenu {
+         display: none;
+    }
+ 
+    .item-center {
+         display: flex;
+    }
+ }
 
 /* ------------------ */
 
@@ -328,6 +388,14 @@ input, button {
 
 .dark-mode nav a {
     color: white;
+}
+
+.dark-mode .dropDownButton {
+    color: white;
+}
+  
+.dark-mode .dropdown-content {
+    background-color: #333;
 }
 
 .dark-mode section .section-title h2 {
