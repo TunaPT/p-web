@@ -94,17 +94,21 @@ nav a:hover {
 /* -------------------- */
 
 @media only screen and (max-width: 800px) {
-   nav a:hover {
+    nav a:hover {
         background-color: transparent;
-   }
+    }
 
-   .dropDownMenu {
+    .dropDownMenu {
         display: inline-block;
-   }
+    }
 
-   .item-center {
+    .item-center {
         display: none;
-   }
+    }
+
+    .reveal-text p {
+        transform: none !important;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -121,7 +125,7 @@ nav a:hover {
     }
 
     .reveal-text p {
-        transform: none !important;
+        transform: translate(150px);
     }
  }
 
